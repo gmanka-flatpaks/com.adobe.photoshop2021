@@ -1,0 +1,24 @@
+name: photoshop
+buildsystem: simple
+build-commands:
+  - cp -r photoshop2021 /app/photoshop2021
+  - install -Dm644 ${FLATPAK_ID}.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
+  - install -Dm755 ${FLATPAK_ID}.desktop /app/share/applications/${FLATPAK_ID}.desktop
+  - install -Dm755 photoshop.sh /app/bin/photoshop.sh
+sources:
+  - type: archive
+    url: https://github.com/gmanka-flatpaks/com.adobe.photoshop2021/releases/download/AdobePhotoshop2021.tar.xz/AdobePhotoshop2021.tar.xz
+    sha256: 8321b969161f2d2ad736067320d493c5b6ae579eaab9400cd1fda6871af2c033
+    dest: photoshop2021
+  - type: file
+    path: com.adobe.photoshop2021.desktop
+  - type: file
+    path: com.adobe.photoshop2021.svg
+  - type: script
+    dest-filename: photoshop.sh
+    commands:
+      - export WINEDEBUG=-all
+      - export WINEPREFIX=$XDG_DATA_HOME/wine
+      - export WINEDLLOVERRIDES="mscoree="
+      - wine64 /app/photoshop2021/photoshop.exe
+

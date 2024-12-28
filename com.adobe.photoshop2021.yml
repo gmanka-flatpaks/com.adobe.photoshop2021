@@ -1,0 +1,15 @@
+id: com.adobe.photoshop2021
+command: photoshop.sh
+runtime: org.freedesktop.Platform
+base: org.winehq.Wine
+base-version: stable-24.08
+runtime-version: '24.08'
+sdk: org.freedesktop.Sdk
+finish-args:
+  - --socket=pulseaudio
+  - --socket=x11
+  - --share=ipc
+  - --device=dri
+modules:
+  - photoshop2021/photoshop2021.yml
+
