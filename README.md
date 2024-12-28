@@ -1,0 +1,1 @@
+# com.adobe.photoshop2021
