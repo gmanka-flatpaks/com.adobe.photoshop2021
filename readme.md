@@ -1,9 +1,26 @@
-### adobe photoshop flatpak
+## adobe photoshop 2021 flatpak for linux
 
-by default, the virtual desktop mode is disabled, if you have graphical bugs, you can enable the virtual desktop using the environment variable:
+### install
+
+```shell
+flatpak remote-add flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add gmanka https://gmanka-flatpaks.github.io/gmanka.flatpakrepo
+flatpak install gmanka com.adobe.photoshop2021
+```
+
+### virtual desktop
+
+by default, the virtual desktop mode is disabled, but if you have graphical bugs, you can enable the virtual desktop using the environment variable
+
+run once with wirtual desktop:
 
 ```bash
 flatpak run --env=DESKTOP_SIZE=1920x1080 com.adobe.photoshop2021
+```
+
+always run with virtual desktop:
+
+```bash
 sudo flatpak override --env=DESKTOP_SIZE=1920x1080 com.adobe.photoshop2021
 ```
 
