@@ -12,7 +12,7 @@ flatpak install gmanka com.adobe.photoshop2021
 
 by default, the virtual desktop mode is disabled, but if you have graphical bugs, you can enable the virtual desktop using the environment variable
 
-run once with wirtual desktop:
+run once with virtual desktop:
 
 ```bash
 flatpak run --env=vd=1920x1080 com.adobe.photoshop2021
