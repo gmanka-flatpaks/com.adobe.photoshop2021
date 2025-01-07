@@ -1,10 +1,13 @@
 name: photoshop
 buildsystem: simple
 sources:
-  - type: archive
+  - type: file
+    path: apply_extra
+  - type: extra-data
+    filename: AdobePhotoshop2021.tar.xz
     url: https://github.com/gmanka-flatpaks/com.adobe.photoshop2021/releases/download/AdobePhotoshop2021.tar.xz/AdobePhotoshop2021.tar.xz
     sha256: 8321b969161f2d2ad736067320d493c5b6ae579eaab9400cd1fda6871af2c033
-    dest: photoshop2021
+    size: 1079389012
 build-commands:
-  - cp -r photoshop2021 /app/photoshop2021
+  - install -Dm755 apply_extra /app/bin/apply_extra
 
