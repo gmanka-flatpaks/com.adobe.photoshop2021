@@ -15,13 +15,19 @@ by default, the virtual desktop mode is disabled, but if you have graphical bugs
 run once with wirtual desktop:
 
 ```bash
-flatpak run --env=DESKTOP_SIZE=1920x1080 com.adobe.photoshop2021
+flatpak run --env=vd=1920x1080 com.adobe.photoshop2021
 ```
 
 always run with virtual desktop:
 
 ```bash
-sudo flatpak override --env=DESKTOP_SIZE=1920x1080 com.adobe.photoshop2021
+sudo flatpak override --env=vd=1920x1080 com.adobe.photoshop2021
+```
+
+or if you installed it with --user:
+
+```bash
+flatpak override --user --env=vd=1920x1080 com.adobe.photoshop2021
 ```
 
 ### special thanks to
