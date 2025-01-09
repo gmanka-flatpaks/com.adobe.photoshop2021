@@ -12,6 +12,7 @@ finish-args:
   - --device=dri
 modules:
   - modules/photoshop2021/photoshop2021_extra_data.yml
-  - modules/winetricks/winetricks.yml
+  - modules/winedeps/winetricks.yml
+  - modules/winedeps/vkd3d.yml
   - modules/launcher/launcher.yml
 
