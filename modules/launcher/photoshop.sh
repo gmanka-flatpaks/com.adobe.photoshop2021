@@ -12,5 +12,9 @@ fi
 if [ -n "$vd" ]; then
     winetricks vd="$vd"
 fi
-wine64 /app/extra/photoshop2021/photoshop.exe
+if [ -d /app/extra ]; then
+    wine64 /app/extra/photoshop2021/photoshop.exe
+else
+    wine64 /app/photoshop2021/photoshop.exe
+fi
 

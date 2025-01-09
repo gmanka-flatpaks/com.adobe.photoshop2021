@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 tar -xf AdobePhotoshop2021.tar.xz
 rm AdobePhotoshop2022.tar.xz
 mv 'Adobe Photoshop 2021' photoshop2021
