@@ -6,10 +6,11 @@ base-version: stable-24.08
 runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 finish-args:
+  - --socket=wayland
+  - --socket=fallback-x11
   - --socket=pulseaudio
-  - --socket=x11
-  - --share=ipc
   - --device=dri
+  - --share=ipc
 modules:
   - modules/photoshop2021/photoshop2021_extra_data.yml
   - modules/winedeps/winetricks.yml
