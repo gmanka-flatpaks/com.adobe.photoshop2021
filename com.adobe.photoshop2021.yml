@@ -6,8 +6,7 @@ base-version: stable-24.08
 runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 finish-args:
-  - --socket=wayland
-  - --socket=fallback-x11
+  - --socket=x11
   - --socket=pulseaudio
   - --device=dri
   - --share=ipc

@@ -21,6 +21,10 @@ flatpak run org.flatpak.Builder --user --install --install-deps-from=flathub --f
 flatpak build-bundle ./repo photoshop2021.flatpak com.adobe.photoshop2021
 ```
 
+### wayland support
+
+it works much better via xwayland, so i disabled wayland socket permission for this flatpak, but if you want to try native wayland, you can enable it via flatseal
+
 ### virtual desktop
 
 by default, the virtual desktop mode is disabled, but if you have graphical bugs, you can enable the virtual desktop using the environment variable
