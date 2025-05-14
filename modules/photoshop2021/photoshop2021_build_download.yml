@@ -6,6 +6,12 @@ sources:
   - type: archive
     dest: photoshop2021
     url: https://github.com/gmanka-flatpaks/photoshop-binaries/releases/download/binay2021/AdobePhotoshop2021.tar.xz
+    mirror-urls:
+      - https://github.com/gmanka-flatpaks/photoshop-binaries/raw/refs/heads/main/AdobePhotoshop2021.tar.xz
+      - https://web.archive.org/web/*/https://lulucloud.mywire.org/FileHosting/GithubProjects/AdobePhotoshop2021.tar.xz
+      - https://qiwi.gg/file/kMnq2220-AdobePhotoshop2021
+      # https://github.com/LinSoftWin/Photoshop-CC2022-Linux
+      # https://github.com/gmanka-flatpaks/photoshop-binaries
     sha256: 8321b969161f2d2ad736067320d493c5b6ae579eaab9400cd1fda6871af2c033
 build-commands:
   - cp -r photoshop2021 /app/photoshop2021
