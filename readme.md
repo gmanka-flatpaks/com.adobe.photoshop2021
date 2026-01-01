@@ -13,7 +13,7 @@ flatpak install gmanka com.adobe.photoshop2021
 ```shell
 git clone https://github.com/gmanka-flatpaks/com.adobe.photoshop2021
 cd com.adobe.photoshop2021
-sed -i 's|photoshop2021_extra_data.yml|photoshop2021_local.yml|' com.adobe.photoshop2021.yml
+sed -i 's|photoshop2021_build_download.yml|photoshop2021_local.yml|' com.adobe.photoshop2021.yml
 curl https://web.archive.org/web/20230627155425if_/https://lulucloud.mywire.org/FileHosting/GithubProjects/AdobePhotoshop2021.tar.xz -Lo modules/photoshop2021/AdobePhotoshop2021.tar.xz
 flatpak --user remote-add flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install org.flatpak.Builder
