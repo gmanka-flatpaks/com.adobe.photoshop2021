@@ -5,7 +5,7 @@ buildsystem: simple
 sources:
   - type: archive
     dest: photoshop2021
-    url: https://github.com/gmanka-flatpaks/photoshop-binaries/releases/download/binay2021/AdobePhotoshop2021.tar.xz
+    url: https://github.com/gmanka-flatpaks/photoshop-binaries/releases/download/binary2021/AdobePhotoshop2021.tar.xz
     mirror-urls:
       - https://github.com/gmanka-flatpaks/photoshop-binaries/raw/refs/heads/main/AdobePhotoshop2021.tar.xz
       - https://web.archive.org/web/*/https://lulucloud.mywire.org/FileHosting/GithubProjects/AdobePhotoshop2021.tar.xz
